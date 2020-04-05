@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="actinateWatchApp" customModuleProvider="target">
+                    <items>
+                        <group width="136" height="135" alignment="center" verticalAlignment="center" layout="vertical" id="o4T-6b-d2B">
+                            <items>
+                                <button width="1" widthAdjustment="1" alignment="left" accessibilityIdentifier="test" id="zz2-uv-Qv6">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="onGreenPressed" destination="AgC-eL-Hgc" id="L2R-CA-a8A"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" id="0Tv-AR-MeQ">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="onYellowPressed" destination="AgC-eL-Hgc" id="6xn-Ia-PvG"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" id="351-DT-hQC">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="onRedPressed" destination="AgC-eL-Hgc" id="nhH-GN-wPE"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="greenButton" destination="zz2-uv-Qv6" id="sZp-EM-kOF"/>
+                        <outlet property="redButton" destination="351-DT-hQC" id="KV0-hS-plK"/>
+                        <outlet property="yellowButton" destination="0Tv-AR-MeQ" id="XZG-pR-067"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="35"/>
+        </scene>
+    </scenes>
+</document>
